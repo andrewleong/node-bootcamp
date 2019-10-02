@@ -1,6 +1,9 @@
 // Import file system module
 const fs = require('fs')
 
+// third party module
+const chalk = require('chalk')
+
 // custom module imports
 const { getNotes } = require('./notes')
 
@@ -29,6 +32,15 @@ const { getNotes } = require('./notes')
 */
 
 // My code here
-const returnedNotes = getNotes()
+// const returnedNotes = getNotes()
+// console.log("returnedNotes", returnedNotes)
 
-console.log("returnedNotes", returnedNotes)
+/* 
+    Challenge 3: Use the chalk library in my project
+    1. NPM install chalk
+    2. Import chalk into app.js
+    3. Use it to print the string "Success!" to the console in green color
+*/
+
+// My code here
+console.log(chalk.green('Success!', chalk.underline.bgBlue('with coolness.')));
