@@ -43,4 +43,14 @@ const { getNotes } = require('./notes')
 */
 
 // My code here
-console.log(chalk.green('Success!', chalk.underline.bgBlue('with coolness.')));
+// console.log(chalk.green('Success!', chalk.underline.bgBlue('with coolness.')));
+
+// process is for accessing the terminal
+console.log(process.argv)
+
+const verify = process.argv[2]; // third element is the input value
+
+// verify the input from terminal
+if(verify === 'andrew'){
+    console.log("you are the machine owner!")
+}
