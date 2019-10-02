@@ -3,6 +3,7 @@ const fs = require('fs')
 
 // third party module
 const chalk = require('chalk')
+const yargs = require('yargs') // for parsing arguments from command line
 
 // custom module imports
 const { getNotes } = require('./notes')
@@ -46,11 +47,14 @@ const { getNotes } = require('./notes')
 // console.log(chalk.green('Success!', chalk.underline.bgBlue('with coolness.')));
 
 // process is for accessing the terminal
-console.log(process.argv)
+// console.log(process.argv)
 
-const verify = process.argv[2]; // third element is the input value
+// const verify = process.argv[2]; // third element is the input value
 
 // verify the input from terminal
-if(verify === 'andrew'){
-    console.log("you are the machine owner!")
-}
+// if(verify === 'andrew'){
+//     console.log("you are the machine owner!")
+// }
+
+console.log(yargs.argv)
+
